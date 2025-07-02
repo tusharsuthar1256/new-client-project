@@ -71,7 +71,7 @@ const handleNavClick = (href: string) => {
           {/* Logo */}
           <Link href='/'>
           <div className="flex items-center gap-2 cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-            <image src="/logo.png" alt="Logo" className="w-18 h-8" />
+            <Image src="/logo.png" alt="Logo" className="w-18 h-8" />
 
             <span className={`text-xl font-bold ${isScrolled ? 'text-blue-900' : 'text-white'}`}>
               Diagnohealth
