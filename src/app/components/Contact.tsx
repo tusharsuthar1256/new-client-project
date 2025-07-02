@@ -10,13 +10,7 @@ const Contact: React.FC = () => {
     message: ''
   });
 
-  // const handleSubmit = (e: React.FormEvent) => {
-  //   e.preventDefault();
-  //   console.log('Form submitted:', formData);
-  //   // Handle form submission here
-  //   alert('Thank you for your message! We will get back to you soon.');
-  //   setFormData({ name: '', email: '', message: '' });
-  // };
+
 
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -37,7 +31,7 @@ const Contact: React.FC = () => {
     } else {
       alert('Failed to send email. Please try again later.');
     }
-  } catch (error) {
+  } catch {
     alert('An error occurred while sending your message.');
   }
 };
