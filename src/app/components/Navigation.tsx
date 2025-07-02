@@ -4,6 +4,8 @@ import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
+import Image from 'next/image';
+
 
 
 const Navigation: React.FC = () => {
@@ -69,8 +71,7 @@ const handleNavClick = (href: string) => {
           {/* Logo */}
           <Link href='/'>
           <div className="flex items-center gap-2 cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-            {/* <img src={'../../../public/logo.png'} height={32} width={32} className={`w-8 h-8 ${isScrolled ? 'text-blue-700' : 'text-white'}`} /> */}
-            <img src="/logo.png" alt="Logo" className="w-18 h-8" />
+            <image src="/logo.png" alt="Logo" className="w-18 h-8" />
 
             <span className={`text-xl font-bold ${isScrolled ? 'text-blue-900' : 'text-white'}`}>
               Diagnohealth
