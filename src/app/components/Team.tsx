@@ -1,81 +1,8 @@
-// 'use client';
-
-// import React from 'react';
-// import { Linkedin, Mail } from 'lucide-react';
-
-// const Team: React.FC = () => {
-//   const teamMembers = [
-//     {
-//       name: 'Mr. Gajanan Telang',
-//       qualification: "Bachelor of Pharmacy",
-//       role: 'Laboratory Manager – Quality Manager',
-//     },
-//     {
-//       name: 'Ms. Vaishali Telang',
-//       qualification: "Diploma in Medical Laboratory Technology, B.Sc. in Biological Sample Profiling & Clinical",
-//       role: 'DNA Analysis Specialist',
-//     },
-//     {
-//       name: 'Ms. Amau Sange',
-//       qualification: "B.Sc. in Medical Laboratory Technology",
-//       role: 'Operational Testing Coordinator & Multidisciplinary Lab Specialist',
-//     },
-//     {
-//       name: 'Dr. A. R. Shinde',
-//       qualification: "B.A.M.S. (Bachelor of Ayurvedic Medicine and Surgery)",
-//       role: 'Medical Officer | Clinical Reviewer | Drug Analysis Specialist',
-
-//     },
-//     {
-//       name: 'Dr. K. Vaishnav',
-//       qualification: "Bachelor of Medicine and Bachelor of Surgery (MBBS)",
-//       role: 'Emergency Physician | Occupational Health Consultant | Drug Testing & Toxicology Specialist',
-//     }
-//   ];
-
-//   return (
-//     <section id="team" className="py-20 bg-gray-50">
-//       <div className="container mx-auto px-4">
-//         <div className="text-center mb-16">
-//           <h2 className="text-4xl font-bold text-gray-800 mb-2">Meet Our Team</h2>
-//           <div className="w-24 h-1 bg-teal-500 mx-auto mb-4"></div>
-//           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-//             Our experienced professionals are dedicated to delivering excellence and maintaining the highest standards of quality.
-//           </p>
-//         </div>
-
-//         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-//           {teamMembers.map((member, index) => (
-//             <div
-//               key={index}
-//               className="bg-white rounded-2xl shadow-md p-6 hover:shadow-xl transition-all duration-300 border border-gray-100"
-//             >
-//               <div className="flex flex-col justify-between h-full">
-//                 <div>
-//                   <h3 className="text-xl font-semibold text-gray-800">{member.name}</h3>
-//                   <p className="text-sm text-teal-600 mt-1">{member.qualification}</p>
-//                   <p className="text-teal-700 font-medium mt-3">{member.role}</p>
-//                   <p className="text-gray-600 text-sm mt-2 leading-relaxed">{member.bio}</p>
-//                 </div>
-
-               
-//               </div>
-//             </div>
-//           ))}
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default Team;
-
 
 
 'use client';
 
 import React, { useState } from 'react';
-import { Linkedin, Mail } from 'lucide-react';
 import './scroll.css'
 
 interface TeamMember {
