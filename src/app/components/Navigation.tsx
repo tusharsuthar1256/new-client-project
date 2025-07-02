@@ -1,10 +1,10 @@
 'use client'
 
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Anchor } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import LOGO from '../../../public/logo.png';
+
 
 const Navigation: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
