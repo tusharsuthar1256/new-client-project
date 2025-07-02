@@ -2,6 +2,8 @@
 
 import React from 'react';
 import { CheckCircle, DollarSign, Globe, Shield } from 'lucide-react';
+import Image from 'next/image';
+
 
 const WhyChooseUs: React.FC = () => {
   const reasons = [
@@ -63,7 +65,7 @@ const WhyChooseUs: React.FC = () => {
               </div>
             </div>
             <div className="text-center">
-              <img
+              <Image
                 src="https://images.pexels.com/photos/3862634/pexels-photo-3862634.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
                 alt="Professional consultation"
                 className="rounded-lg shadow-lg w-full h-64 object-cover"
