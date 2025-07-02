@@ -1,0 +1,11 @@
+
+.custom-scrollbar::-webkit-scrollbar {
+  display: none;
+  width: 4px;
+}
+.custom-scrollbar {
+  -ms-overflow-style: none;  /* IE/Edge */
+  scrollbar-width: 30px;     /* Firefox */
+} 
+
+
