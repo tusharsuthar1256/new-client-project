@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react';
-import { Anchor } from 'lucide-react';
+
 
 const Header: React.FC = () => {
   return (
