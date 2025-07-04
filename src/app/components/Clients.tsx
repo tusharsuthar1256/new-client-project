@@ -63,37 +63,41 @@ const Clients: React.FC = () => {
           </div>
         </div>
 
-        {/* Testimonials */}
-        <div className="grid md:grid-cols-3 gap-8">
-          {testimonials.map((testimonial, index) => (
-            <div key={index} className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-              <div className="flex items-center mb-4">
-                <Quote className="w-8 h-8 text-teal-500 mr-2" />
-                <div className="flex">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
-                  ))}
-                </div>
-              </div>
-              
-              <p className="text-gray-600 mb-6 italic leading-relaxed">
-                "{testimonial.content}"
-              </p>
-              
-              <div className="flex items-center">
-                <img
-                  src={testimonial.logo}
-                  alt={testimonial.name}
-                  className="w-12 h-12 rounded-full object-cover mr-4"
-                />
-                <div>
-                  <h4 className="font-bold text-gray-900">{testimonial.name}</h4>
-                  <p className="text-teal-600 text-sm">{testimonial.role}</p>
-                </div>
-              </div>
-            </div>
+  {/* Testimonials */}
+<div className="grid md:grid-cols-3 gap-8">
+  {testimonials.map((testimonial, index) => (
+    <div
+      key={index}
+      className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
+    >
+      <div className="flex items-center mb-4">
+        <Quote className="w-8 h-8 text-teal-500 mr-2" />
+        <div className="flex">
+          {[...Array(testimonial.rating)].map((_, i) => (
+            <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
           ))}
         </div>
+      </div>
+
+      <p className="text-gray-600 mb-6 italic leading-relaxed">
+        &quot;{testimonial.content}&quot;
+      </p>
+
+      <div className="flex items-center">
+        <img
+          src={testimonial.logo}
+          alt={testimonial.name}
+          className="w-12 h-12 rounded-full object-cover mr-4"
+        />
+        <div>
+          <h4 className="font-bold text-gray-900">{testimonial.name}</h4>
+          <p className="text-teal-600 text-sm">{testimonial.role}</p>
+        </div>
+      </div>
+    </div>
+  ))}
+</div>
+
 
         <div className="text-center mt-12">
           <button className="bg-gradient-to-r from-blue-600 to-teal-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-blue-700 hover:to-teal-700 transition-all duration-300 transform hover:scale-105">
