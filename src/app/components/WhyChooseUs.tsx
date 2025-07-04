@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { CheckCircle, DollarSign, Globe, Shield } from 'lucide-react';
-import Image from 'next/image';
+
 
 
 const WhyChooseUs: React.FC = () => {
