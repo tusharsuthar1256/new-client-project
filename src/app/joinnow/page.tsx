@@ -57,7 +57,7 @@ const JoinNowPage = () => {
       <div className="relative bg-white shadow-lg rounded-xl p-8 w-full max-w-md z-10">
         <h2 className="text-2xl font-bold mb-6 text-center text-blue-700">Join Now</h2>
 
-        <form className="space-y-4" onSubmit={handleSubmit}>
+        <form className="space-y-4 text-gray-900" onSubmit={handleSubmit}>
           <div>
             <label className="block text-sm font-medium text-gray-700">Name</label>
             <input
