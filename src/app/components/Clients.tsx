@@ -2,6 +2,8 @@
 
 import React from 'react';
 import { Star, Quote } from 'lucide-react';
+import Image from 'next/image';
+
 
 const Clients: React.FC = () => {
   const testimonials = [
@@ -53,7 +55,7 @@ const Clients: React.FC = () => {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
             {clientLogos.map((logo, index) => (
               <div key={index} className="bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow duration-300 group">
-                <img
+                <Image
                   src={logo}
                   alt={`Client ${index + 1}`}
                   className="w-full h-16 object-cover rounded grayscale group-hover:grayscale-0 transition-all duration-300"
@@ -84,7 +86,7 @@ const Clients: React.FC = () => {
       </p>
 
       <div className="flex items-center">
-        <img
+        <Image
           src={testimonial.logo}
           alt={testimonial.name}
           className="w-12 h-12 rounded-full object-cover mr-4"
