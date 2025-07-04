@@ -1,6 +1,8 @@
 'use client'
 import React from 'react';
 import { Award, Globe, Shield } from 'lucide-react';
+import Image from 'next/image';
+
 
 const AboutUs: React.FC = () => {
   return (
@@ -43,7 +45,7 @@ const AboutUs: React.FC = () => {
           </div>
 
           <div className="relative">
-            <img
+            <Image
               src="https://images.pexels.com/photos/3862132/pexels-photo-3862132.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
               alt="Laboratory testing"
               className="rounded-lg shadow-lg w-full h-96 object-cover"
